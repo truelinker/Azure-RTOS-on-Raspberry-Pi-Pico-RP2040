@@ -24,7 +24,7 @@ This sample demonstrates [Azure RTOS threadx](https://azure.com/rtos) on Raspber
 1. Clone this repository (and threadx as a submodule) alongside the pico-sdk (>= 1.2.0) directory. (This project is an external project depends on pico-sdk)
    
    ```
-   git clone --recurse-submodules https://github.com/xiongyu0523/Azure-RTOS-on-Raspberry-Pi-Pico-RP2040
+   git clone --recurse-submodules git@github.com:truelinker/Azure-RTOS-on-Raspberry-Pi-Pico-RP2040.git
    ```
 
 2. Open a **Developer command prompt** for VS2019 and go to the cloned project to build
@@ -33,10 +33,10 @@ This sample demonstrates [Azure RTOS threadx](https://azure.com/rtos) on Raspber
    cd Azure-RTOS-on-Azure-Sphere-Mediatek-MT3620
    mkdir build
    cd build
-   # assume PICO-SDK-PATH is set to ../../pico-sdk
-   cmake .. -G "NMake Makefiles"
-   # waiting for namke project generation
-   nmake 
+   # assume PICO_SDK_PATH is set to ../../pico-sdk
+   cmake ..
+   # waiting for mke project generation
+   make 
    ```
 
 3. Hold the BOOTSEL button on Raspberry Pi Pico and connect micro-USB cable, you will see a new USB drive `PRI-PR2` is mounted.
