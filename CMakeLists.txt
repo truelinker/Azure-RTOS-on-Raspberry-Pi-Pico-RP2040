@@ -18,5 +18,7 @@ pico_add_extra_outputs(${PROJECT_NAME})
 set(THREADX_ARCH "cortex_m0")
 set(THREADX_TOOLCHAIN "gnu")
 add_subdirectory(threadx)
+add_subdirectory(filex)
+add_subdirectory(levelx)
 
-target_link_libraries(${PROJECT_NAME} pico_stdlib cmsis_core azrtos::threadx)
+target_link_libraries(${PROJECT_NAME} pico_stdlib cmsis_core azrtos::threadx azrtos::filex azrtos::levelx)

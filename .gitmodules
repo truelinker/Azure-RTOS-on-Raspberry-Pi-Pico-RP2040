@@ -1,3 +1,9 @@
 [submodule "threadx"]
 	path = threadx
 	url = git@github.com:truelinker/threadx.git
+[submodule "filex"]
+	path = filex
+	url = git@github.com:azure-rtos/filex.git
+[submodule "levelx"]
+	path = levelx
+	url = git@github.com:azure-rtos/levelx.git

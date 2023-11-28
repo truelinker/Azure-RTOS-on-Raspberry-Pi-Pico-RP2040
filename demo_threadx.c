@@ -4,6 +4,8 @@
 
 #include <stdio.h>
 #include "tx_api.h"
+#include "fx_api.h"
+#include "lx_api.h"
 #include "pico/stdlib.h"
 #include "hardware/gpio.h"
 
